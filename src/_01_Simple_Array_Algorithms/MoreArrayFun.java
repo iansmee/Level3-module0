@@ -37,7 +37,15 @@ void BackwardsPrinter(String[] BackwardStrings) {
 
 
     //4. Write a method that takes an array of Strings and prints every other String in the array.
-
+void Otherprinter(String[] Otherstrings) {
+	String print = "";
+	for (int i = 0; i < Otherstrings.length; i++) {
+		if(i % 2 == 0) {
+			print = print + ", " + Otherstrings[i];
+		}
+	}
+	System.out.println(print);
+}
 
     //5. Write a method that takes an array of Strings and prints all the Strings in the array
     //   in a completely random order. Almost every run of the program should result in a different order.
